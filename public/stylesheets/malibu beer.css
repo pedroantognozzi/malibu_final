@@ -1,0 +1,95 @@
+/* font-family: "Alfa Slab One", serif; */
+
+footer {
+    background-color: #aaa;
+}
+
+.hero {
+    background: url(../img/header\ 3.avif) no-repeat;
+    background-size: cover;
+    height: 0.5vh;
+    min-height: 600px;
+    color: #d21c37;
+}
+
+h1, h2 {
+    font-family: "Alfa Slab One", cursive;
+}
+
+.lista-novedades {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-novedades li {
+    margin: 4px 0;
+}
+
+.lista-novedades li a {
+    background-color: #fff;
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista-novedades li a:hover {
+    color: #212529;
+    background-color: #dadada;
+}
+
+.lista-novedades li a img {
+    width: 120px;
+    height: 45px;
+    filter: grayscale();
+    transition: all .2s ease-in-out;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+.lista-novedades li a:hover img {
+    filter: none;
+    margin-right: 1.4rem;
+    opacity: 1;
+}
+
+.testimonios {
+    background-color: #dadada;
+    padding: 4rem !important;
+}
+
+.testimonio {
+    text-align: center;
+    padding: 20px 50px;
+}
+
+.titulo-principal {
+    color: #f5921b;
+    background-color: #f0f0f0; /* Fondo blanco */
+    padding: 20px; /* Ajusta el tamaño del área blanca */
+    width: 600px; /* Ajusta el ancho del fondo */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+.titulo-principal p {
+    color: black; /* Cambia este color al que desees */
+}
+
+.historia {
+    background-color: #efefef;
+}
+
+.staff {
+    background: url(../img/header\ 4.webp) no-repeat;
+}
+
+.news {
+    background: url(../img/header\ 5.jpg) no-repeat;
+}
+
+.scroll-section {
+    scroll-margin-top: 65px; /* Ajusta el valor según sea necesario */
+}
