@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 21, 2025 at 10:12 PM
+-- Generation Time: Jun 22, 2025 at 10:24 PM
 -- Server version: 9.1.0
 -- PHP Version: 8.3.14
 
@@ -20,6 +20,29 @@ SET time_zone = "+00:00";
 --
 -- Database: `base_malibu`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `productos`
+--
+
+DROP TABLE IF EXISTS `productos`;
+CREATE TABLE IF NOT EXISTS `productos` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
+  `subtitulo` text COLLATE utf8mb4_general_ci NOT NULL,
+  `cuerpo` text COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `productos`
+--
+
+INSERT INTO `productos` (`id`, `titulo`, `subtitulo`, `cuerpo`) VALUES
+(1, 'Malibu Cocktail', 'Malibu offers ready-to-drink canned cocktails including the Piña Colada, Strawberry Daiquiri, Peach Rum Punch, and Pineapple Bay Breeze. These pre-mixed options are convenient for a variety of occasions, including get-togethers, picnics, or simply enjoying at home.', ''),
+(3, 'Malibu Splash', 'Malibu Splash is a sparkling malt beverage that combines fruity flavors with a hint of coconut. Known for its freshness and tropical flavor, it\'s available in several flavors, including strawberry, pineapple, lime, passion fruit, and watermelon, all blended with coconut.', '');
 
 -- --------------------------------------------------------
 
