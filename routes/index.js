@@ -1,11 +1,17 @@
 var express = require('express');
 var router = express.Router();
-
 var nodemailer = require('nodemailer');
+var productosModel = require('../models/productosModel');
+
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index');
+router.get('/', async function(req, res, next) {
+
+  var productos = await productosModel.getProductos();
+
+  res.render('index',{
+    productos
+  });
 });
 
 router.post('/', async (req, res, next) => {
@@ -16,7 +22,7 @@ router.post('/', async (req, res, next) => {
   var telefono = req.body.tel;
   var mensaje = req.body.mensaje;
 
-  console.log(req.body);
+  // console.log(req.body);
 
   var obj = {
     to: 'pedroantognozzi@gmail.com',

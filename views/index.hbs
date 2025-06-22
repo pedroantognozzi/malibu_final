@@ -13,13 +13,33 @@
         <div id="products" class="col-lg-4 col-md-12 offset-lg-2 py-3 scroll-section">
             <h2>Drinks</h2>
             <ul class="lista-novedades">
-                <li><a href="#"><img src="img/malibu-cocktail q.jpg"> Malibu Cocktail</a></li>
-                <li><a href="#"><img src="img/malibu splash.jpg"> Malibu Splash</a></li>
-                <li><a href="#"><img src="img/ready to serve.jpg"> Ready to Serve</a></li>
-                <li><a href="#"><img src="img/news 1.jpg"> Malibu Beer</a></li>
-                <li><a href="#"><img src="img/classic malibu.jpg"> Classic Malibu</a></li>
+                {{#each productos}}
+                <li>
+                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#Modal{{id}}"><img src="img/malibu-cocktail q.jpg">{{titulo}}</a>
+                </li>
+                {{/each}}
             </ul>
         </div> <!-- cierra novedades -->
+
+        {{#each productos}}
+        <div class="modal fade" id="Modal{{id}}" tabindex="-1" aria-labelledby="ModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ModalLabel">{{titulo}}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>{{subtitulo}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+
+
         <div class="col-lg-5 col-md-12 my-3">
             <div class="rounded py-5 testimonios">
                 <h2 class="text-center">Reviews</h2>
