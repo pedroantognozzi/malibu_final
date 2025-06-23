@@ -32,8 +32,8 @@ async function getProductoById(id) {
 
 async function modificarProductoById(obj, id) {
     try {
-        var query = 'update productos set titulo = ?, subtitulo = ? where id = ?';
-        var rows = await pool.query(query, [obj.titulo, obj.subtitulo, id]);
+        var query = 'update productos set titulo = ?, subtitulo = ?, img_id = ? where id = ?';
+        var rows = await pool.query(query, [obj.titulo, obj.subtitulo, obj.img_id, id]);
         return rows;    
     } catch (error) {
         throw error;

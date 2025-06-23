@@ -93,3 +93,9 @@ h1, h2 {
 .scroll-section {
     scroll-margin-top: 65px; /* Ajusta el valor según sea necesario */
 }
+
+.modal-content img {
+    width: 120px;
+    height: 50px;
+    max-width: 100%;
+}

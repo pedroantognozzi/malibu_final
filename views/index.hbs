@@ -15,7 +15,7 @@
             <ul class="lista-novedades">
                 {{#each productos}}
                 <li>
-                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#Modal{{id}}"><img src="img/malibu-cocktail q.jpg">{{titulo}}</a>
+                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#Modal{{id}}"><img src="{{imagen}}">{{titulo}}</a>
                 </li>
                 {{/each}}
             </ul>
@@ -27,7 +27,8 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="ModalLabel">{{titulo}}</h5>
+                        <img src="{{imagen}}" />
+                        <h5 class="modal-title ms-3" id="ModalLabel">{{titulo}}</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
